@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 Data & Text Mining Coursework
+# Data & Text Mining Coursework
 
 **Kumpulan tugas mata kuliah Data Mining dan Text Mining: web scraping dan NLP bahasa Indonesia, klasifikasi probabilistik, visualisasi distribusi statistik, reduksi dimensi, hingga segmentasi nasabah.**
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 🗂️ Daftar Isi
+##  Daftar Isi
 
 | # | Topik | Notebook | Teknik Utama |
 |:---:|---|---|---|
@@ -34,10 +34,10 @@
 
 ---
 
-## 1. 📰 Text Mining
+## 1.  Text Mining
 
 ### 1.1 Web Scraping detik.com + Preprocessing + TF-IDF
-📓 [`01_web_scraping_tfidf_detik.ipynb`](01-text-mining/01_web_scraping_tfidf_detik.ipynb)
+ [`01_web_scraping_tfidf_detik.ipynb`](01-text-mining/01_web_scraping_tfidf_detik.ipynb)
 
 Pipeline lengkap dari mengambil berita secara langsung (*live*) hingga representasi vektor:
 
@@ -55,7 +55,7 @@ Scraping indeks berita → ambil isi artikel → case folding → cleaning → t
 <img src="01-text-mining/images/top15_terms_detik.png" alt="Top 15 term" width="500">
 
 ### 1.2 Rule-Based English Stemmer
-📓 [`02_custom_english_stemmer.ipynb`](01-text-mining/02_custom_english_stemmer.ipynb)
+ [`02_custom_english_stemmer.ipynb`](01-text-mining/02_custom_english_stemmer.ipynb)
 
 *Stemmer* bahasa Inggris yang dibangun **tanpa library NLP**:
 - Daftar sufiks berurutan dari yang terpanjang (`-ational`, `-ization`, … `-ing`, `-ed`, `-s`)
@@ -64,7 +64,7 @@ Scraping indeks berita → ambil isi artikel → case folding → cleaning → t
 - Diuji otomatis terhadap daftar kata dan hasil yang diharapkan
 
 ### 1.3 Analisis SMS Spam vs Ham
-📓 [`03_sms_spam_tfidf.ipynb`](01-text-mining/03_sms_spam_tfidf.ipynb) · Dataset: [SMS Spam Collection (UCI)](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
+ [`03_sms_spam_tfidf.ipynb`](01-text-mining/03_sms_spam_tfidf.ipynb) · Dataset: [SMS Spam Collection (UCI)](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 
 Membandingkan kata kunci khas SMS spam dan SMS normal (ham) berdasarkan **rata-rata bobot TF-IDF**.
 
@@ -82,8 +82,8 @@ SMS spam didominasi kata ajakan dan iming-iming (*call, free, claim, prize, urge
 
 ---
 
-## 2. 🏦 Naive Bayes Manual
-📓 [`naive_bayes_kredit.ipynb`](02-naive-bayes-manual/naive_bayes_kredit.ipynb)
+## 2.  Naive Bayes Manual
+ [`naive_bayes_kredit.ipynb`](02-naive-bayes-manual/naive_bayes_kredit.ipynb)
 
 Memprediksi apakah pengajuan kredit **disetujui**, dengan menghitung Naive Bayes **langkah demi langkah** (rumus ditulis dalam LaTeX):
 
@@ -107,8 +107,8 @@ Notebook ini juga memperlihatkan **zero-frequency problem**: skor "Tidak" bernil
 
 ---
 
-## 3. 📈 Visualisasi 90 Distribusi Probabilitas
-📓 [`distribusi_probabilitas.ipynb`](03-probability-distributions/distribusi_probabilitas.ipynb)
+## 3.  Visualisasi 90 Distribusi Probabilitas
+ [`distribusi_probabilitas.ipynb`](03-probability-distributions/distribusi_probabilitas.ipynb)
 
 Setiap distribusi divisualisasikan dalam panel **PDF/PMF** dan **CDF** dengan beberapa kombinasi parameter, sehingga pengaruh tiap parameter terhadap bentuk distribusi langsung terlihat. Distribusi yang tidak tersedia di `scipy.stats` diimplementasikan langsung dari rumus matematikanya.
 
@@ -122,18 +122,18 @@ Setiap distribusi divisualisasikan dalam panel **PDF/PMF** dan **CDF** dengan be
 
 ---
 
-## 4. 🧩 Reduksi Dimensi
+## 4.  Reduksi Dimensi
 
 ### 4.1 PCA pada Iris
-📓 [`01_pca_iris.ipynb`](04-dimensionality-reduction/01_pca_iris.ipynb): 4 fitur direduksi menjadi 2 komponen yang menjelaskan **95,8% variansi** (72,96% + 22,85%).
+ [`01_pca_iris.ipynb`](04-dimensionality-reduction/01_pca_iris.ipynb): 4 fitur direduksi menjadi 2 komponen yang menjelaskan **95,8% variansi** (72,96% + 22,85%).
 
 ### 4.2 Pengaruh Perplexity pada t-SNE
-📓 [`02_tsne_perplexity.ipynb`](04-dimensionality-reduction/02_tsne_perplexity.ipynb): perplexity 5–100 pada dataset *circles*, *S-curve*, dan *uniform grid*.
+ [`02_tsne_perplexity.ipynb`](04-dimensionality-reduction/02_tsne_perplexity.ipynb): perplexity 5–100 pada dataset *circles*, *S-curve*, dan *uniform grid*.
 
 <img src="04-dimensionality-reduction/images/tsne_perplexity.png" alt="t-SNE perplexity" width="850">
 
 ### 4.3 PCA vs Kernel PCA vs Autoencoder
-📓 [`03_pca_kpca_autoencoder.ipynb`](04-dimensionality-reduction/03_pca_kpca_autoencoder.ipynb)
+ [`03_pca_kpca_autoencoder.ipynb`](04-dimensionality-reduction/03_pca_kpca_autoencoder.ipynb)
 
 Dataset **Digits** (64 fitur) direduksi dengan tiga metode, lalu kualitas reduksinya diukur dengan akurasi **Logistic Regression**:
 
@@ -155,8 +155,8 @@ Dataset **Digits** (64 fitur) direduksi dengan tiga metode, lalu kualitas reduks
 
 ---
 
-## 5. 🏦 Segmentasi Nasabah Bank
-📓 [`bank_customer_segmentation.ipynb`](05-bank-customer-segmentation/bank_customer_segmentation.ipynb) · 📄 [Soal](05-bank-customer-segmentation/soal.pdf) · Dataset: [Bank Marketing (UCI)](https://archive.ics.uci.edu/dataset/222/bank+marketing), 45.211 nasabah
+## 5.  Segmentasi Nasabah Bank
+ [`bank_customer_segmentation.ipynb`](05-bank-customer-segmentation/bank_customer_segmentation.ipynb) · 📄 [Soal](05-bank-customer-segmentation/soal.pdf) · Dataset: [Bank Marketing (UCI)](https://archive.ics.uci.edu/dataset/222/bank+marketing), 45.211 nasabah
 
 Menjawab 5 pertanyaan bisnis tentang kampanye pemasaran deposito berjangka:
 
@@ -177,7 +177,7 @@ Menjawab 5 pertanyaan bisnis tentang kampanye pemasaran deposito berjangka:
 
 ---
 
-## 🚀 Cara Menjalankan
+##  Cara Menjalankan
 
 ```bash
 git clone https://github.com/r4dtwhle/data-text-mining-coursework.git
@@ -196,7 +196,7 @@ jupyter notebook
 
 ---
 
-## 📁 Struktur Folder
+##  Struktur Folder
 
 ```
 data-text-mining-coursework/
