@@ -1,0 +1,17 @@
+pandas>=2.2
+numpy>=1.26
+scipy>=1.12
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+openpyxl>=3.1
+jupyter
+# Text mining
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+Sastrawi>=1.0.1
+nltk>=3.8
+wordcloud>=1.9
+# Autoencoder (04-dimensionality-reduction/03_pca_kpca_autoencoder.ipynb)
+tensorflow>=2.15

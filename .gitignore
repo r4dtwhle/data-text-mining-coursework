@@ -1,0 +1,22 @@
+# Gambar yang otomatis dibuat ulang saat notebook dijalankan
+03-probability-distributions/*.png
+02-naive-bayes-manual/naive_bayes_plot.png
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
